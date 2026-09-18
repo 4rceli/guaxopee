@@ -138,16 +138,18 @@ p { margin: 0; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 800;
-  font-size: 1.3rem;
-  white-space: nowrap;
+  gap: 10px;
+  text-decoration: none;
 }
+
+.logo__imagem {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
 .logo__marca {
-  background: var(--gradiente-marca);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-weight: 800;
 }
 .header__busca {
   flex: 1;

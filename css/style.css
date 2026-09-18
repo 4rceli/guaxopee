@@ -405,8 +405,13 @@ p { margin: 0; }
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
-  position: sticky;
-  top: 90px;
+}
+
+@media (min-width: 900px) {
+  .filtros {
+    position: sticky;
+    top: 90px;
+  }
 }
 .filtros__grupo { display: flex; flex-direction: column; gap: 0.5rem; }
 .filtros__titulo { font-weight: 700; font-size: 0.85rem; text-transform: none; color: var(--texto); }

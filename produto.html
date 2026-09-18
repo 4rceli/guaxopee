@@ -1,74 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title data-titulo-pagina>Produto — Guaxopee</title>
-  <meta name="description" data-meta-descricao content="Confira este produto no Guaxopee e acesse a Shopee para comprar." />
+
+  <meta
+    name="description"
+    data-meta-descricao
+    content="Confira este produto no Guaxopee e acesse a Shopee para comprar."
+  />
+
   <meta name="robots" content="index, follow" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+
+  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header class="header">
+
     <div class="container header__bar">
-      <a href="index.html" class="logo" aria-label="Guaxopee - página inicial">
-        🛍️ <span class="logo__marca">Guaxopee</span>
+
+      <!-- LOGO -->
+      <a
+        href="index.html"
+        class="logo"
+        aria-label="Guaxopee - página inicial"
+      >
+        <img
+          src="assets/logo.png"
+          alt="Guaxopee"
+          class="logo__imagem"
+        />
+
+        <span class="logo__marca">
+          Guaxopee
+        </span>
       </a>
 
+
+      <!-- BUSCA -->
       <div class="header__busca">
-        <form class="busca-form" data-header-search>
-          <input type="search" placeholder="O que você está procurando?" aria-label="Pesquisar produtos" />
-          <button type="submit" aria-label="Pesquisar">🔎</button>
+
+        <form
+          class="busca-form"
+          data-header-search
+        >
+
+          <input
+            type="search"
+            placeholder="O que você está procurando?"
+            aria-label="Pesquisar produtos"
+          />
+
+          <button
+            type="submit"
+            aria-label="Pesquisar"
+          >
+            🔎
+          </button>
+
         </form>
+
       </div>
 
+
+      <!-- AÇÕES -->
       <div class="header__acoes">
-        <button class="icon-btn" data-theme-toggle aria-label="Alternar tema claro/escuro">🌙</button>
-        <button class="icon-btn" data-menu-toggle aria-expanded="false" aria-label="Abrir menu de categorias">☰</button>
+
+        <button
+          class="icon-btn"
+          data-theme-toggle
+          aria-label="Alternar tema claro/escuro"
+        >
+          🌙
+        </button>
+
+        <button
+          class="icon-btn"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-label="Abrir menu de categorias"
+        >
+          ☰
+        </button>
+
       </div>
+
     </div>
 
-    <nav class="container nav-categorias" data-categorias-nav aria-label="Categorias"></nav>
-    <nav class="container menu-mobile" data-nav data-categorias-nav aria-label="Categorias (celular)"></nav>
+
+    <!-- CATEGORIAS -->
+    <nav
+      class="container nav-categorias"
+      data-categorias-nav
+      aria-label="Categorias"
+    ></nav>
+
+
+    <!-- MENU MOBILE -->
+    <nav
+      class="container menu-mobile"
+      data-nav
+      data-categorias-nav
+      aria-label="Categorias (celular)"
+    ></nav>
+
   </header>
 
+
+  <!-- CONTEÚDO -->
   <main class="container">
+
+    <!-- PRODUTO -->
     <div id="produto-container">
       <!-- Preenchido dinamicamente por js/product.js -->
     </div>
 
-    <div class="estado-vazio is-hidden" data-produto-nao-encontrado>
-      <p class="estado-vazio__emoji">😕</p>
-      <p class="estado-vazio__titulo">Produto não encontrado.</p>
-      <p>O produto que você procura pode ter sido removido. <a href="produtos.html" style="color:var(--roxo); font-weight:700;">Ver todos os produtos →</a></p>
+
+    <!-- PRODUTO NÃO ENCONTRADO -->
+    <div
+      class="estado-vazio is-hidden"
+      data-produto-nao-encontrado
+    >
+
+      <p class="estado-vazio__emoji">
+        😕
+      </p>
+
+      <p class="estado-vazio__titulo">
+        Produto não encontrado.
+      </p>
+
+      <p>
+        O produto que você procura pode ter sido removido.
+
+        <a
+          href="produtos.html"
+          style="color:var(--roxo); font-weight:700;"
+        >
+          Ver todos os produtos →
+        </a>
+      </p>
+
     </div>
 
-    <section class="secao" data-relacionados-secao>
+
+    <!-- PRODUTOS RELACIONADOS -->
+    <section
+      class="secao"
+      data-relacionados-secao
+    >
+
       <div class="secao__cabecalho">
-        <h2 class="secao__titulo">Você também pode gostar</h2>
+
+        <h2 class="secao__titulo">
+          Você também pode gostar
+        </h2>
+
       </div>
-      <div class="produtos-grid" data-relacionados-grid></div>
+
+      <div
+        class="produtos-grid"
+        data-relacionados-grid
+      ></div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="footer">
+
     <div class="container">
+
       <div class="footer__aviso">
+
         <p>
-          O Guaxopee pode utilizar links de afiliados. Isso significa que podemos receber uma comissão quando uma
-          compra é realizada através de determinados links, sem custo adicional para você.
+          O Guaxopee pode utilizar links de afiliados.
+          Isso significa que podemos receber uma comissão quando uma
+          compra é realizada através de determinados links,
+          sem custo adicional para você.
         </p>
-        <p>© <span data-ano></span> Guaxopee</p>
+
+        <p>
+          © <span data-ano></span> Guaxopee
+        </p>
+
       </div>
+
     </div>
+
   </footer>
 
+
+  <!-- JAVASCRIPT -->
   <script src="js/products-data.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/product.js"></script>
+
 </body>
+
 </html>

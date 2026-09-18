@@ -48,15 +48,14 @@ function initHeader() {
   const btnTema = document.querySelector("[data-theme-toggle]");
   if (btnTema) btnTema.addEventListener("click", alternarTema);
 
-  // Busca do header redireciona para produtos.html?busca=...
-  const formBusca = document.querySelector("[data-header-search]");
-  if (formBusca) {
+  // Busca do header e do Hero redirecionam para produtos.html?busca=...
+  document.querySelectorAll("[data-header-search]").forEach((formBusca) => {
     formBusca.addEventListener("submit", (e) => {
       e.preventDefault();
       const termo = formBusca.querySelector("input").value.trim();
       window.location.href = `produtos.html${termo ? "?busca=" + encodeURIComponent(termo) : ""}`;
     });
-  }
+  });
 
   renderizarMenuCategorias();
 }

@@ -3,58 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Guaxopee — Achadinhos e ofertas selecionadas</title>
-  <meta name="description" content="Guaxopee é um catálogo de produtos e ofertas. Pesquise, compare e acesse diretamente a página do produto na Shopee." />
+
+  <meta
+    name="description"
+    content="Guaxopee é um catálogo de produtos e ofertas. Pesquise, compare e acesse diretamente a página do produto na Shopee."
+  />
   <meta name="robots" content="index, follow" />
 
   <meta property="og:title" content="Guaxopee — Achadinhos e ofertas selecionadas" />
-  <meta property="og:description" content="Encontre produtos e ofertas no Guaxopee e acesse diretamente a Shopee para comprar." />
+  <meta
+    property="og:description"
+    content="Encontre produtos e ofertas no Guaxopee e acesse diretamente a Shopee para comprar."
+  />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
 
-  <link rel="icon" href="assets/logo.png" type=""image/png" />
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+
+  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<a href="index.html" class="logo" aria-label="Guaxopee - página inicial">
-  <img src="assets/logo.png" alt="Guaxopee" class="logo__imagem" />
-  <span class="logo__marca">Guaxopee</span>
-</a>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__bar">
+
+      <a href="index.html" class="logo" aria-label="Guaxopee - página inicial">
+        <img
+          src="assets/logo.png"
+          alt="Guaxopee"
+          class="logo__imagem"
+        />
+        <span class="logo__marca">Guaxopee</span>
+      </a>
 
       <div class="header__busca">
         <form class="busca-form" data-header-search>
-          <input type="search" placeholder="O que você está procurando?" aria-label="Pesquisar produtos" />
+          <input
+            type="search"
+            placeholder="O que você está procurando?"
+            aria-label="Pesquisar produtos"
+          />
           <button type="submit" aria-label="Pesquisar">🔎</button>
         </form>
       </div>
 
       <div class="header__acoes">
-        <button class="icon-btn" data-theme-toggle aria-label="Alternar tema claro/escuro">🌙</button>
-        <button class="icon-btn" data-menu-toggle aria-expanded="false" aria-label="Abrir menu de categorias">☰</button>
+        <button
+          class="icon-btn"
+          data-theme-toggle
+          aria-label="Alternar tema claro/escuro"
+        >
+          🌙
+        </button>
+
+        <button
+          class="icon-btn"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-label="Abrir menu de categorias"
+        >
+          ☰
+        </button>
       </div>
+
     </div>
 
-    <nav class="container nav-categorias" data-categorias-nav aria-label="Categorias"></nav>
-    <nav class="container menu-mobile" data-nav data-categorias-nav aria-label="Categorias (celular)"></nav>
+    <nav
+      class="container nav-categorias"
+      data-categorias-nav
+      aria-label="Categorias"
+    ></nav>
+
+    <nav
+      class="container menu-mobile"
+      data-nav
+      data-categorias-nav
+      aria-label="Categorias (celular)"
+    ></nav>
   </header>
 
+
+  <!-- CONTEÚDO -->
   <main>
+
     <!-- HERO -->
     <section class="hero">
       <div class="container hero__conteudo">
+
         <p class="hero__marca">GUAXOPEE</p>
-        <h1 class="hero__titulo">Achou, clicou, foi pra Shopee.</h1>
+
+        <h1 class="hero__titulo">
+          Achou, clicou, foi pra Shopee.
+        </h1>
+
         <p class="hero__subtexto">
-          Descubra produtos, ofertas e achadinhos selecionados em um só lugar. Quando encontrar algo que gostou,
-          acesse diretamente a Shopee, adicione ao carrinho e finalize sua compra por lá.
+          Descubra produtos, ofertas e achadinhos selecionados em um só lugar.
+          Quando encontrar algo que gostou, acesse diretamente a Shopee,
+          adicione ao carrinho e finalize sua compra por lá.
         </p>
 
         <form class="busca-form hero__busca" data-header-search>
-          <input type="search" placeholder=" O que você está procurando?" aria-label="Pesquisar produtos" />
-          <button type="submit">Encontrar produtos</button>
+          <input
+            type="search"
+            placeholder="O que você está procurando?"
+            aria-label="Pesquisar produtos"
+          />
+
+          <button type="submit">
+            Encontrar produtos
+          </button>
         </form>
 
         <ul class="hero__confianca">
@@ -62,85 +132,203 @@
           <li>Compra realizada diretamente na Shopee</li>
           <li>Sem pagamento no Guaxopee</li>
         </ul>
+
       </div>
     </section>
+
 
     <!-- CATEGORIAS -->
     <section class="secao container">
+
       <div class="secao__cabecalho">
-        <h2 class="secao__titulo">Categorias</h2>
+        <h2 class="secao__titulo">
+          Categorias
+        </h2>
       </div>
-      <div class="categorias-grid" data-categorias-grid></div>
+
+      <div
+        class="categorias-grid"
+        data-categorias-grid
+      ></div>
+
     </section>
+
 
     <!-- DESTAQUES -->
     <section class="secao container">
+
       <div class="secao__cabecalho">
-        <h2 class="secao__titulo">✨ Produtos em destaque</h2>
-        <a href="produtos.html" class="secao__link">Ver todos →</a>
+
+        <h2 class="secao__titulo">
+          ✨ Produtos em destaque
+        </h2>
+
+        <a
+          href="produtos.html"
+          class="secao__link"
+        >
+          Ver todos →
+        </a>
+
       </div>
-      <div class="produtos-grid" data-destaques-grid></div>
+
+      <div
+        class="produtos-grid"
+        data-destaques-grid
+      ></div>
+
     </section>
+
 
     <!-- OFERTAS -->
     <section class="secao container">
+
       <div class="secao__cabecalho">
-        <h2 class="secao__titulo">🔥 Ofertas do momento</h2>
-        <a href="produtos.html?oferta=1" class="secao__link">Ver todas →</a>
+
+        <h2 class="secao__titulo">
+          🔥 Ofertas do momento
+        </h2>
+
+        <a
+          href="produtos.html?oferta=1"
+          class="secao__link"
+        >
+          Ver todas →
+        </a>
+
       </div>
-      <div class="produtos-grid" data-ofertas-grid></div>
+
+      <div
+        class="produtos-grid"
+        data-ofertas-grid
+      ></div>
+
     </section>
+
 
     <!-- CREDIBILIDADE -->
     <section class="secao container">
+
       <div class="credibilidade">
-        <h2 class="credibilidade__titulo">🛒 Compra diretamente na Shopee</h2>
+
+        <h2 class="credibilidade__titulo">
+          🛒 Compra diretamente na Shopee
+        </h2>
+
         <p class="credibilidade__texto">
-          O Guaxopee é um catálogo de produtos e ofertas. Ao clicar em um produto, você será direcionado diretamente
-          para a Shopee, onde poderá conferir os detalhes, adicionar o item ao carrinho e realizar a compra
-          normalmente pelo site ou aplicativo da Shopee.
+          O Guaxopee é um catálogo de produtos e ofertas.
+          Ao clicar em um produto, você será direcionado diretamente
+          para a Shopee, onde poderá conferir os detalhes, adicionar
+          o item ao carrinho e realizar a compra normalmente pelo site
+          ou aplicativo da Shopee.
         </p>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="footer">
+
     <div class="container">
+
       <div class="footer__grid">
+
         <div>
-          <p class="footer__marca">Guaxopee</p>
-          <p class="footer__desc">Achadinhos, produtos e ofertas em um só lugar.</p>
+
+          <p class="footer__marca">
+            Guaxopee
+          </p>
+
+          <p class="footer__desc">
+            Achadinhos, produtos e ofertas em um só lugar.
+          </p>
+
         </div>
+
+
         <div class="footer__coluna">
-          <p class="footer__coluna-titulo">Categorias</p>
-          <a href="produtos.html?categoria=Eletrônicos">Eletrônicos</a>
-          <a href="produtos.html?categoria=Moda">Moda</a>
-          <a href="produtos.html?categoria=Casa">Casa</a>
-          <a href="produtos.html?categoria=Games">Games</a>
+
+          <p class="footer__coluna-titulo">
+            Categorias
+          </p>
+
+          <a href="produtos.html?categoria=Eletrônicos">
+            Eletrônicos
+          </a>
+
+          <a href="produtos.html?categoria=Moda">
+            Moda
+          </a>
+
+          <a href="produtos.html?categoria=Casa">
+            Casa
+          </a>
+
+          <a href="produtos.html?categoria=Games">
+            Games
+          </a>
+
         </div>
+
+
         <div class="footer__coluna">
-          <p class="footer__coluna-titulo">Sobre</p>
-          <span>Como funciona</span>
-          <span>Links de afiliados</span>
-          <span>Privacidade</span>
+
+          <p class="footer__coluna-titulo">
+            Sobre
+          </p>
+
+          <span>
+            Como funciona
+          </span>
+
+          <span>
+            Links de afiliados
+          </span>
+
+          <span>
+            Privacidade
+          </span>
+
         </div>
+
       </div>
+
+
       <div class="footer__aviso">
+
         <p>
-          O Guaxopee pode utilizar links de afiliados. Isso significa que podemos receber uma comissão quando uma
-          compra é realizada através de determinados links, sem custo adicional para você.
+          O Guaxopee pode utilizar links de afiliados.
+          Isso significa que podemos receber uma comissão quando uma
+          compra é realizada através de determinados links,
+          sem custo adicional para você.
         </p>
+
         <p>
-          O Guaxopee não vende, envia ou processa pagamentos dos produtos apresentados. As compras são realizadas
-          diretamente na Shopee. O Guaxopee é um catálogo independente e não é representante oficial da Shopee.
+          O Guaxopee não vende, envia ou processa pagamentos dos produtos
+          apresentados. As compras são realizadas diretamente na Shopee.
+          O Guaxopee é um catálogo independente e não é representante
+          oficial da Shopee.
         </p>
-        <p>© <span data-ano></span> Guaxopee</p>
+
+        <p>
+          © <span data-ano></span> Guaxopee
+        </p>
+
       </div>
+
     </div>
+
   </footer>
 
+
+  <!-- JAVASCRIPT -->
   <script src="js/products-data.js"></script>
   <script src="js/utils.js"></script>
   <script src="js/app.js"></script>
+
 </body>
 </html>

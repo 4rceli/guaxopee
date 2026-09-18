@@ -122,6 +122,8 @@ p { margin: 0; }
 
 /* ---------- Header ---------- */
 
+/* ---------- Header ---------- */
+
 .header {
   position: sticky;
   top: 0;
@@ -131,8 +133,8 @@ p { margin: 0; }
 }
 .header__bar {
   display: flex;
-  align-items: center;
   flex-wrap: nowrap;
+  align-items: center;
   gap: 0.75rem;
   padding: 0.85rem 0;
 }
@@ -143,19 +145,18 @@ p { margin: 0; }
   text-decoration: none;
   flex-shrink: 0;
 }
-
 .logo__imagem {
   width: 40px;
   height: 40px;
   object-fit: contain;
   flex-shrink: 0;
 }
-
 .logo__marca {
   font-weight: 800;
 }
 .header__busca {
   flex: 1;
+  min-width: 0;
   display: none;
 }
 .busca-form {
@@ -169,11 +170,11 @@ p { margin: 0; }
 }
 .busca-form input {
   flex: 1;
+  min-width: 0;
   border: none;
   background: transparent;
   color: var(--texto);
   font-size: 0.95rem;
-  min-width: 0;
 }
 .busca-form input:focus { outline: none; }
 .busca-form button {
@@ -183,6 +184,7 @@ p { margin: 0; }
   border-radius: 999px;
   padding: 0.5rem 0.9rem;
   min-height: 38px;
+  flex-shrink: 0;
 }
 .header__acoes {
   display: flex;
@@ -201,17 +203,18 @@ p { margin: 0; }
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
+  flex-shrink: 0;
 }
 .nav-categorias {
   display: none;
   gap: 0.4rem;
   padding: 0.6rem 0 0.9rem;
   overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Edge/IE legado */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .nav-categorias::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge modernos */
+  display: none;
 }
 .nav-categoria {
   flex: none;
@@ -240,7 +243,6 @@ p { margin: 0; }
   [data-menu-toggle] { display: none; }
   .menu-mobile { display: none !important; }
 }
-
 /* ---------- Hero ---------- */
 
 .hero {

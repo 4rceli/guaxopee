@@ -146,13 +146,16 @@ p { margin: 0; }
   flex-shrink: 0;
 }
 .logo__imagem {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   flex-shrink: 0;
 }
 .logo__marca {
   font-weight: 800;
+  font-size: 30px;
+   padding-right: 11rem;
+    padding-left: 1rem;
 }
 .header__busca {
   flex: 1;
@@ -212,6 +215,7 @@ p { margin: 0; }
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+   max-width: 76rem;
 }
 .nav-categorias::-webkit-scrollbar {
   display: none;
